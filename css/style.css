@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color:  #E5E5E5;
+}
 .container {
     max-width: 1366px;
     width: 100%;
     margin: auto;
+    background-color: #fff;
 }
 .block {
     display: flex;
@@ -96,13 +100,17 @@
 .button_shop{
     font-family: 'Lato', sans-serif;
     border-radius: 20px;
-    padding: 10px 25px 10px 20px;
+    padding: 10px 25px 10px 35px;
     cursor: pointer;
     height: 40px;
 }
 .button_shop::before{
-    content: "$319";
-    padding: 10px;
+    content: "319$";
+    position: relative;
+    right: 10px;
+    top: 0px;
+    width: 33px;
+    height: 20px;
 }
 .sweater {
     max-width: 946px;
@@ -116,6 +124,7 @@
     background-image: url(../img/Arrow.svg);
     width: 60px;
     height: 60px;
+    cursor: pointer;
 }
 .sweater::after {
     content: "";
@@ -126,19 +135,49 @@
     width: 60px;
     height: 60px;
     opacity: 0.7;
+    cursor: pointer;
 }
 .section_obuv {
     padding-top: 50px;
     background-color: #fff;
 }
+.vse {
+    flex-wrap: wrap;
+    margin: auto;
+}
 .watch {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     max-width: 563px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 30px;
     background: url(../img/chasi.png) no-repeat center;
-    padding: 60px 296px 80px 49px;
+    padding-top: 60px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+.h1_watch {
+    max-width: 221px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
 }
 .p_watch {
+    max-width: 175px;
     margin-top: 15px;
     margin-bottom: 25px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
 }
 .button_watch {
     background: #4592FF url(../img/Arrow1.svg) no-repeat left 78px top 17px;
@@ -152,11 +191,22 @@
     cursor: pointer;
 }
 .obuv {
-    max-width: 563px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+    max-width: 565px;
+    width: 100%;
+    margin-right: auto;
+    border-radius: 10px;
     background: url(../img/obuv.png) no-repeat center;
-    padding: 60px 266px 80px 49px;
+    padding-top: 60px;
+    padding-left: 45px;
+    padding-bottom: 80px;
 }
 .h1_obuv {
+    max-width: 252px;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
@@ -165,6 +215,7 @@
     color: #fff;
 }
 .p_obuv {
+    max-width: 176px;
     margin-top: 15px;
     margin-bottom: 25px;
     font-family: Lato;
@@ -173,4 +224,159 @@
     font-size: 14px;
     line-height: 20px;
     color: #fff;
+}
+.section_genders {
+    padding-top: 30px;
+    background-color: #fff;
+}
+.man {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 860px;
+    width: 100%;
+    margin-right: 26px;
+    margin-left: auto;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-left: 45px;
+    padding-bottom: 60px;
+    background: #CCD5E6 url(../img/man.png) no-repeat center left 270px;
+}
+.man1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.women {
+    margin-right: 35px;
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.img_women {
+    height: 60px;
+}
+.women1 {
+    min-height: 60px;
+    width: 60px;
+    background: #ffffff url(../img/Preview\ 1.png) no-repeat center /cover;
+    border-radius: 5px 5px 0px 0px;
+}
+.women2 {
+    min-height: 60px;
+    width: 60px;
+    background: #CCD5E6 url(../img/Preview\ 2.png) no-repeat center /cover;
+    border: 1px solid #fff;
+}
+.women3 {
+    min-height: 60px;
+    width: 60px;
+    background: #CCD5E6 url(../img/Preview\ 3.png) no-repeat center /cover;
+    border: 1px solid #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+.h1_man {
+    max-width: 418px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px; 
+}
+.p_man {
+    max-width: 319px;
+    margin-bottom: 40px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+}
+.woman {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 272px;
+    width: 100%;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-bottom: 210px;
+    background: #FF4F52 url(../img/woman.png) no-repeat center left 53px;
+}
+.h1_woman {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.p_woman {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #FFC4C9;
+}
+.woman_price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.button_man {
+    cursor: pointer;
+    padding: 10px 25px 10px 38px;
+    border-radius: 20px;
+}
+.button_man::before {
+    content: "$129";
+    position: relative;
+    right: 12px;
+    top: 0px;
+    width: 33px;
+    height: 20px;
+}
+.clothes {
+    padding-top: 60px;
+}
+.arrival {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.h3_arrival {
+    max-width: 648px;
+    width: 100%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+    margin-right: 240px;
+}
+.view_span {
+    cursor: pointer;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #262D33;
 }
