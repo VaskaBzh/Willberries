@@ -10,20 +10,21 @@ body {
     max-width: 1366px;
     width: 100%;
     margin: auto;
-    background-color: #fff;
+}
+.container_osn {
+    max-width: 1165px;
+    width: 100%;
+    margin: auto;
 }
 .block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.section_header{
+.block_header{
+    background-color: #fff;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-.block_header{
-    padding-left: 105px;
-    padding-right: 105px;
 }
 .menu_button{
     padding-right: 20px;
@@ -68,9 +69,6 @@ body {
     background:#3DC47E;
     border-radius: 3px;
 }
-.block_sweater{
-    background: #B4D1E0 url(../img/sweater.png) no-repeat left 416px center;
-}
 .section__title{
     margin-top: 20px;
     margin-bottom: 15px;
@@ -81,12 +79,6 @@ body {
     font-size: 55px;
     line-height: 70px;
     color: #262D33;
-}
-.section_sweater {
-    align-items: center;
-    padding-top: 90px;
-    padding-bottom: 110px;
-    position: relative;
 }
 .section__text {
     max-width: 335px;
@@ -112,9 +104,20 @@ body {
     width: 33px;
     height: 20px;
 }
+
+.bonus {
+    position: relative;
+    background: #B4D1E0 url(../img/sweater.png) no-repeat right 16px center;
+    min-height: 570px;
+}
 .sweater {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     max-width: 946px;
     margin: auto;
+    padding-top: 90px;
 }
 .sweater::before {
     content: "";
@@ -139,28 +142,26 @@ body {
     opacity: 0.7;
     cursor: pointer;
 }
-.section_obuv {
+.block_obuv {
     padding-top: 50px;
     background-color: #fff;
 }
 .vse {
+    display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: space-between;
 }
 .watch {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    max-width: 563px;
-    width: 100%;
+    width: 48%;
     border-radius: 10px;
-    margin-left: auto;
     margin-right: 30px;
-    background: url(../img/chasi.png) no-repeat center;
-    padding-top: 60px;
+    background: url(../img/chasi.png) no-repeat right;
     padding-left: 45px;
-    padding-bottom: 80px;
+    min-height: 370px;
     margin-bottom: 30px;
 }
 .h1_watch {
@@ -195,17 +196,14 @@ body {
 .obuv {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     margin-bottom: 30px;
-    max-width: 565px;
-    width: 100%;
-    margin-right: auto;
+    width: 48%;
     border-radius: 10px;
-    background: url(../img/obuv.png) no-repeat center;
-    padding-top: 60px;
+    background: url(../img/obuv.png) no-repeat right;
     padding-left: 45px;
-    padding-bottom: 80px;
+    min-height: 370px;
 }
 .h1_obuv {
     max-width: 252px;
@@ -235,27 +233,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 860px;
-    width: 100%;
+    width: 73%;
     margin-right: 26px;
-    margin-left: auto;
     border-radius: 10px;
     padding-top: 35px;
     padding-left: 45px;
-    padding-bottom: 60px;
+    min-height: 370px;
     background: #CCD5E6 url(../img/man.png) no-repeat center left 270px;
 }
 .man1 {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
 }
 .women {
     margin-right: 35px;
     align-items: baseline;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
 }
 .img_women {
@@ -303,16 +299,13 @@ body {
 .woman {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    max-width: 272px;
-    width: 100%;
-    margin-right: auto;
+    width: 23%;
+    min-height: 370px;
     border-radius: 10px;
-    padding-top: 35px;
     padding-left: 25px;
-    padding-bottom: 210px;
-    background: #FF4F52 url(../img/woman.png) no-repeat center left 53px;
+    background: #FF4F52 url(../img/woman.png) no-repeat center right;
 }
 .h1_woman {
     font-family: Roboto Slab;
@@ -357,11 +350,12 @@ body {
 .clothes {
     padding-top: 60px;
     padding-bottom: 70px;
+    background-color: #fff;
 }
 .arrival {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .h3_arrival {
     max-width: 648px;
@@ -389,20 +383,63 @@ body {
     margin: auto;
 }
 .hudie {
-    margin-top: 30px;
-    margin-right: 35px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 30px 35px 35px 35px;
     max-width: 263px;
     width: 100%;
     background: url(../img/hudi.png) no-repeat center top 30px;
     text-align: center;
 }
-.bb {
+.fade {
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
-    top: 18px;
-    right: 90px;
+    margin: 30px 35px 35px 35px;
+    max-width: 263px;
+    width: 100%;
+    background: url(../img/1.png) no-repeat center top 30px;
+    text-align: center;
+}
+.text {
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 30px 35px 35px 35px;
+    max-width: 263px;
+    width: 100%;
+    background: url(../img/2.png) no-repeat center top 30px;
+    text-align: center;
+}
+.long {
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 30px 35px 35px 35px;
+    max-width: 263px;
+    width: 100%;
+    background: url(../img/3.png) no-repeat center top 30px;
+    text-align: center;
+}
+.bb {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .h3_clothes {
-    margin-top: 235px;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
@@ -507,4 +544,52 @@ a {
     align-items: center;
     max-width: 88px;
     width: 100%;
+}
+
+.pay {
+    max-width: 339px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+.container { 
+    width: 100%;
+}
+
+.container_block {
+    width: 95%;
+}
+
+.container_osn {
+    width: 95%;
+}
+
+.sweater {
+    width: 95%;
+}
+
+.cloths_block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sweater {
+    align-items: center;
+}
+}
+
+@media (max-width: 768px) {
+.watch {
+    width: 47%;
+}
+
+.logo {
+    display: none;
+}
+
+.bonus {
+    background: #B4D1E0;
+}
+
+
 }
