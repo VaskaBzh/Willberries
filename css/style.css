@@ -36,6 +36,11 @@ body {
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
+    transition-duration: 300ms;
+}
+
+.menu_button:hover {
+    color: #4B5157;
 }
 .cart{
     padding-top: 15px;
@@ -55,7 +60,15 @@ body {
     background-color: #4592FF;
     color: #FFFFFF;
     border: none;
+    transition-duration: 500ms;
+    transition-property: all;
 }
+
+.button--primary:hover {
+    box-shadow: 0 2px 8px 1px #0b4ba5;
+    transform: scale(1.1);
+}
+
 .best{
     padding: 5px 12px;
     cursor: pointer;
@@ -68,7 +81,20 @@ body {
     border:none;
     background:#3DC47E;
     border-radius: 3px;
+    transition-duration: 300ms;
+    transition-property: all;
 }
+
+span {
+    transition-duration: 300ms;
+    transition-property: all;
+    cursor: pointer;
+}
+
+span:hover {
+    transform: scale(1.05) translateX(2px);
+}
+
 .section__title{
     margin-top: 20px;
     margin-bottom: 15px;
@@ -122,7 +148,7 @@ body {
 .sweater::before {
     content: "";
     position: absolute;
-    left: 107px;
+    left: 7%;
     top: 50%;
     margin-top: -30px;
     background-image: url(../img/Arrow.svg);
@@ -133,7 +159,7 @@ body {
 .sweater::after {
     content: "";
     position: absolute;
-    right: 108px;
+    right: 7%;
     top: 50%;
     margin-top: -30px;
     background-image: url(../img/Arrowleft.svg);
@@ -358,15 +384,12 @@ body {
     justify-content: space-between;
 }
 .h3_arrival {
-    max-width: 648px;
-    width: 100%;
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
     color: #262D33;
-    margin-right: 240px;
 }
 .view_span {
     cursor: pointer;
@@ -485,6 +508,12 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.nav_f:hover {
+    color: #B4D1E0;
 }
 
 a {
@@ -512,6 +541,9 @@ a {
     max-width: 17px;
     width: 100%;
     height: 17px;
+    transition-duration: 500ms;
+    transition-property: all;
+    cursor: pointer;
 }
 
 .img_footer:nth-child(1) {
@@ -522,8 +554,35 @@ a {
     max-width: 20px;
 }
 
-.socials_block {
+.img_footer:hover {
+    transform: scale(1.2);
+}
+
+.social_block {
     max-width: 173px;
+    width: 100%;
+}
+
+.img_pay {
+    cursor: pointer;
+}
+
+.img_top {
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.img_top:hover {
+    transform: translateY(-10px);
+}
+
+.img_top:active {
+
+}
+
+.socials_block {
+    max-width: 459px;
     width: 100%;
 }
 
@@ -536,10 +595,6 @@ a {
     min-height: 40px;
 }
 
-.pay {
-    align-items: center;
-}
-
 .top {
     align-items: center;
     max-width: 88px;
@@ -549,6 +604,7 @@ a {
 .pay {
     max-width: 339px;
     width: 100%;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -576,20 +632,115 @@ a {
 .sweater {
     align-items: center;
 }
+
+.bonus {
+    background: #B4D1E0;
+}
+
+.title_sweater {
+    text-align: center;
+}
+
+.section__text {
+    text-align: center;
+}
+
+.watch {
+    background: url(../img/chasi.png) no-repeat left;
+}
 }
 
 @media (max-width: 768px) {
+
 .watch {
     width: 47%;
+    background: #E5E5E5;
+}
+
+.obuv {
+    background: #939699;
+}
+
+.man {
+    background: #B4D1E0;
+}
+
+.woman {
+    background: #4B5157;
 }
 
 .logo {
     display: none;
 }
 
-.bonus {
-    background: #B4D1E0;
+.socials_block {
+    margin-left: 20px;
 }
 
+.a_footer {
+    text-align: right;
+}
+}
 
+@media (max-width: 425px) {
+
+.footer_nav {
+    flex-wrap: wrap;
+}
+
+.nav_f {
+    width: 33%;
+}
+
+.social_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.socials_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.watch {
+    width: 100%;
+    margin-right: 0;
+    background: url(../img/chasi.png) no-repeat left;
+}
+
+.obuv {
+    width: 100%;
+    background: url(../img/obuv.png) no-repeat left;
+}
+
+.man {
+    width: 100%;
+    margin-right: 0;
+    background: #CCD5E6 url(../img/man.png) no-repeat center right;
+    margin-bottom: 30px;
+}
+
+.woman {
+    width: 100%;
+    background: #FF4F52 url(../img/woman.png) no-repeat center right;
+}
+
+.top {
+    margin-left: 20px;
+}
+}
+
+@media (max-width: 320px) {
+
+.bottom_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    margin-top: 20px;
+}
 }
